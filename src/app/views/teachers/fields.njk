@@ -1,0 +1,92 @@
+<div class="item">
+    <div>Avatar URL</div>
+    <div>
+        <input type="url" name="avatar_url" placeholder="http://" value="{{teacher.avatar_url}}">
+    </div>
+</div>
+
+<div class="item">
+    <div>Teacher</div>
+    <div>
+        <input type="text" name="name" placeholder="Name of Teacher (Full)" value="{{teacher.name}}">
+    </div>
+</div>
+
+<div class="item">
+    <div>Birthday</div>
+    <div>
+        <input type="date" name="birth_date" value="{{teacher.birth_date}}">
+    </div>
+</div>
+
+<div class="item">
+    <div>Educational Level</div>
+    <div>
+        <select name="educational_level">
+            <option value="Incomplete Elementary School"{% if teacher.educational_level == "Incomplete Elementary School"%}selected{%endif%}>
+            Incomplete Elementary School
+            </option>
+            <option value="Complete Elementary School"{% if teacher.educational_level == "Complete Elementary School"%}selected{%endif%}>
+            Complete Elementary School
+            </option>
+            <option value="Incomplete high school"{% if teacher.educational_level == "Incomplete high school"%}selected{%endif%}>
+            Incomplete high school
+            </option>
+            <option value="Imcomplete high school"{% if teacher.educational_level == "Imcomplete high school"%}selected{%endif%}>
+            Incomplete high school
+            </option>
+            <option value="Complete high school"{% if teacher.educational_level == "Complete high school"%}selected{%endif%} selected>
+            Complete high school
+            </option>
+            <option value="Attending Graduation"{% if teacher.educational_level == "Attending Graduation"%}selected{%endif%}>
+            Attending Graduation
+            </option>
+            <option value="Full graduation"{% if teacher.educational_level == "Full graduation"%}selected{%endif%}>
+            Full graduation
+            </option>
+            <option value="Master's"{% if teacher.educational_level == "Master's"%}selected{%endif%}>
+            Master's
+            </option>
+            <option value="Doctorate degree"{% if teacher.educational_level == "Doctorate degree"%}selected{%endif%}>
+            Doctorate degree
+            </option>
+        </select>
+    </div>
+</div>
+
+<div class="item">
+    <div>Class Type</div>
+    <div>
+        <span>
+            <input 
+                type="radio" 
+                name="class_type" 
+                value="presential"
+                {% if teacher.class_type == 'presential'%}
+                checked
+                {%endif%}
+            >
+            Presential Class
+        </span>
+        <span>
+            <input 
+                type="radio" 
+                name="class_type" 
+                value="distance"
+                {% if teacher.class_type == 'distance'%}
+                checked
+                {%endif%}
+            >
+            Distance class
+        </span>
+    </div>
+</div>
+
+<div class="item">
+    <div>Specialty</div>
+    <div>
+        <input type="text" name="subjects_taught" placeholder="Separate specialties with commas" value={{teacher.subjects_taught}}>
+    </div>
+</div>
+
+<button type="submit">Save</button>

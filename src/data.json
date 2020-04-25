@@ -1,0 +1,29 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "https://media.thestar.com.my/Prod/79F56EFF-0B2F-442E-A7ED-4F7AC4A0C538",
+      "name": "Victor Gabriel Alves Radael",
+      "birth": 854323200000,
+      "educational_level": "Attending Graduation",
+      "specialty": [
+        "Javascript",
+        " Java"
+      ],
+      "class_type": "presential",
+      "created_at": 1583376211384
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "avatar_url": "https://media.thestar.com.my/Prod/79F56EFF-0B2F-442E-A7ED-4F7AC4A0C538",
+      "name": "Victor Radael",
+      "email": "vr@gmail.com",
+      "birth": 854323200000,
+      "grade": "3st high school",
+      "available_workload": 30,
+      "created_at": 1583376805974
+    }
+  ]
+}
